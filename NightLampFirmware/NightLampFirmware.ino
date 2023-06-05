@@ -9,14 +9,15 @@ const int PIN_GREEN = 10;
 const int PIN_BLUE  = 6;
 
 unsigned int Val_R = 255;
-unsigned int Val_G = 0;
-unsigned int Val_B = 0;
+unsigned int Val_G = 255;
+unsigned int Val_B = 255;
 unsigned int Brightness = 255;
 bool enabled = true;
 
 void setup() {
   Serial.begin(9600);
   irrecv.enableIRIn(); // Receiving IR
+  //Serial.println("Started!");
 }
 
 void loop() {
